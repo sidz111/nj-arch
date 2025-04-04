@@ -831,76 +831,110 @@
             </div>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row g-3">
-              <div class="col-12 col-sm-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Mobile"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <select class="form-select" style="height: 55px">
-                  <option selected>Choose Service</option>
-                  <option value="1">Service 1</option>
-                  <option value="2">Service 2</option>
-                  <option value="3">Service 3</option>
-                </select>
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="date" id="date" data-target-input="nearest">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact-form"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="839abd12-0170-4aa2-a598-57d495e8236c"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Appointment"
+                required
+              />
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
                   <input
                     type="text"
-                    class="form-control datetimepicker-input"
-                    placeholder="Choose Date"
-                    data-target="#date"
-                    data-toggle="datetimepicker"
+                    class="form-control"
+                    placeholder="Your Name"
+                    name="name"
                     style="height: 55px"
+                    required
                   />
                 </div>
-              </div>
-              <div class="col-12 col-sm-6">
-                <div class="time" id="time" data-target-input="nearest">
+                <div class="col-12 col-sm-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    name="email"
+                    style="height: 55px"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
                   <input
                     type="text"
-                    class="form-control datetimepicker-input"
-                    placeholder="Choose Date"
-                    data-target="#time"
-                    data-toggle="datetimepicker"
+                    class="form-control"
+                    placeholder="Your Mobile"
+                    name="contact"
                     style="height: 55px"
+                    required
                   />
                 </div>
+                <div class="col-12 col-sm-6">
+                  <select
+                    class="form-select"
+                    style="height: 55px"
+                    name="service"
+                    required
+                  >
+                    <option selected>Choose Service</option>
+                    <option value="1">Service 1</option>
+                    <option value="2">Service 2</option>
+                    <option value="3">Service 3</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="date" id="date" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      placeholder="Choose Date"
+                      name="date"
+                      data-target="#date"
+                      data-toggle="datetimepicker"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="time" id="time" data-target-input="nearest">
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      placeholder="Choose Date"
+                      name="time"
+                      data-target="#time"
+                      data-toggle="datetimepicker"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Book Appointment
+                  </button>
+                </div>
               </div>
-              <div class="col-12">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary w-100 py-3" type="submit">
-                  Book Appointment
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -961,7 +995,7 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Our Social Platforms</h3>
-            <p>Connect us here.</p>
+            <p class="ms-4">Connect us here.</p>
             <!-- <div class="position-relative mx-auto" style="max-width: 700%">
               <input
                 class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
@@ -975,24 +1009,19 @@
                 Subscribe
               </button>
             </div> -->
-            <div class="d-flex pt-2">
+            <div class="d-flex pt-2 ps-5">
               <a
-                class="btn btn-square btn-outline-body me-1"
+                class="btn btn-square btn-outline-body me-3"
                 href="https://www.instagram.com/nandajay_architects"
                 target="_blank"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a class="btn btn-square btn-outline-body me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
+
               <a
                 class="btn btn-square btn-outline-body me-1"
                 target="_blank"
                 href="mailto:Chandrakant.bhosale1903@gmail.com"
                 ><i class="fas fa-envelope"></i
-              ></a>
-              <a class="btn btn-square btn-outline-body me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
           </div>
