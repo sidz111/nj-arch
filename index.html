@@ -76,6 +76,23 @@
           right: -10px;
         }
       }
+
+      .hover-glow {
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .hover-glow:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .fact-icon i {
+        transition: color 0.3s;
+      }
+
+      .fact-item:hover .fact-icon i {
+        color: #0d6efd !important;
+      }
     </style>
   </head>
 
@@ -117,9 +134,7 @@
             <li class="nav-item">
               <a href="about.html" class="nav-link">About</a>
             </li>
-            <li class="nav-item">
-              <a href="service.html" class="nav-link">Services</a>
-            </li>
+
             <li class="nav-item">
               <a href="project.html" class="nav-link">Our Projects</a>
             </li>
@@ -269,48 +284,63 @@
     <!-- Carousel End -->
 
     <!-- Facts Start -->
+    <!-- Add this line to your HTML head for Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <div class="container-xxl py-5">
       <div class="container pt-5">
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-              <div class="fact-icon">
-                <img src="img/icons/icon-2.png" alt="Icon" />
+            <div
+              class="fact-item text-center bg-light h-100 p-5 pt-0 rounded-4 shadow hover-glow"
+            >
+              <div class="fact-icon mb-4">
+                <i class="fas fa-pencil-ruler fa-3x text-primary"></i>
               </div>
               <h3 class="mb-3">Design Approach</h3>
-              <p class="mb-0">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
+              <p>
+                Combining creativity with technical precision to deliver
+                intuitive user experiences and aesthetic layouts.
               </p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-              <div class="fact-icon">
-                <img src="img/icons/icon-3.png" alt="Icon" />
+            <div
+              class="fact-item text-center bg-light h-100 p-5 pt-0 rounded-4 shadow hover-glow"
+            >
+              <div class="fact-icon mb-4">
+                <i class="fas fa-lightbulb fa-3x text-success"></i>
               </div>
               <h3 class="mb-3">Innovative Solutions</h3>
-              <p class="mb-0">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
+              <p>
+                Delivering smart, scalable solutions using modern technologies
+                to solve real-world problems efficiently.
               </p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="fact-item text-center bg-light h-100 p-5 pt-0">
-              <div class="fact-icon">
-                <img src="img/icons/icon-4.png" alt="Icon" />
+            <div
+              class="fact-item text-center bg-light h-100 p-5 pt-0 rounded-4 shadow hover-glow"
+            >
+              <div class="fact-icon mb-4">
+                <i class="fas fa-tasks fa-3x text-warning"></i>
               </div>
               <h3 class="mb-3">Project Management</h3>
-              <p class="mb-0">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-                sed diam stet diam sed stet.
+              <p>
+                Streamlining processes and ensuring timely delivery through
+                strategic planning and effective leadership.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Facts End -->
 
     <!-- About Start -->
@@ -621,57 +651,26 @@
             <p class="mb-2">
               <i class="fa fa-phone-alt text-primary me-3"></i>+91 9623752492
             </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope text-primary me-3"></i
-              >Chandrakant.bhosale1903@gmail.com
-            </p>
-            <!-- <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-body me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-outline-body me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-outline-body me-1" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-outline-body me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div> -->
           </div>
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Services</h3>
-            <a class="btn btn-link" href="">Architecture</a>
-            <a class="btn btn-link" href="">3D Animation</a>
-            <a class="btn btn-link" href="">House Planning</a>
-            <a class="btn btn-link" href="">Interior Design</a>
-            <a class="btn btn-link" href="">Construction</a>
+            <p class="btn btn-link">Architecture</p>
+            <p class="btn btn-link">3D Animation</p>
+            <p class="btn btn-link">House Planning</p>
+            <p class="btn btn-link">Interior Design</p>
+            <p class="btn btn-link">Construction</p>
           </div>
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Quick Links</h3>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <p class="btn btn-link">About Us</p>
+            <p class="btn btn-link">Contact Us</p>
+            <p class="btn btn-link">Our Services</p>
+            <p class="btn btn-link">Terms & Condition</p>
           </div>
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Our Social Platforms</h3>
             <p class="ms-4">Connect us here.</p>
-            <!-- <div class="position-relative mx-auto" style="max-width: 700%">
-              <input
-                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                Subscribe
-              </button>
-            </div> -->
+
             <div class="d-flex pt-2 ps-5">
               <a
                 class="btn btn-square btn-outline-body me-3"
