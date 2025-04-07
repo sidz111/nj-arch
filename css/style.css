@@ -38,19 +38,6 @@ h6,
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /*** Button ***/
@@ -327,23 +314,26 @@ h6,
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: brightness(0.6);
+    transition: 0.5s ease-in-out;
 }
 
 .service-item .service-text {
-    background: var(--light);
-    transition: .5s;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.5s;
+    border-radius: 10px;
 }
 
 .service-item:hover .service-text {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .service-item * {
-    transition: .5;
+    transition: 0.5s;
 }
 
 .service-item:hover * {
-    color: #FFFFFF;
+    color: #ffffff !important;
 }
 
 .service-item .btn {
@@ -351,16 +341,20 @@ h6,
     height: 40px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: var(--dark);
-    background: #FFFFFF;
-    white-space: nowrap;
+    background: #ffffff;
+    border-radius: 20px;
     overflow: hidden;
-    transition: .5s;
 }
 
 .service-item:hover .btn {
     width: 140px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    color: #fff;
 }
+
 
 
 /*** Project ***/
@@ -378,141 +372,7 @@ h6,
 }
 
 
-/*** Team ***/
-.team-items {
-    margin: -.75rem;
-}
 
-.team-item {
-    padding: .75rem;
-}
-
-.team-item::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    background: #FFFFFF;
-    transition: .5s;
-    z-index: -1;
-}
-
-.team-item:hover::after {
-    height: 100%;
-    background: var(--primary);
-}
-
-.team-item .team-social {
-    position: absolute;
-    width: 100%;
-    bottom: -20px;
-    left: 0;
-}
-
-.team-item .team-social .btn {
-    display: inline-flex;
-    margin: 0 2px;
-    color: var(--primary);
-    background: var(--light);
-}
-
-.team-item .team-social .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
-}
-
-
-/*** Appointment ***/
-.bootstrap-datetimepicker-widget.bottom {
-    top: auto !important;
-}
-
-.bootstrap-datetimepicker-widget .table * {
-    border-bottom-width: 0px;
-}
-
-.bootstrap-datetimepicker-widget .table th {
-    font-weight: 500;
-}
-
-.bootstrap-datetimepicker-widget.dropdown-menu {
-    padding: 10px;
-    border-radius: 2px;
-}
-
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-    background: var(--primary);
-}
-
-.bootstrap-datetimepicker-widget table td.today::before {
-    border-bottom-color: var(--primary);
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel {
-    display: flex !important;
-    flex-direction: column-reverse;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.testimonial-carousel .owl-dots {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.testimonial-carousel .owl-dots .owl-dot {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active {
-    width: 100px;
-    height: 100px;
-}
-
-.testimonial-carousel .owl-dots .owl-dot::after {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: var(--primary);
-    background: #FFFFFF;
-    border-radius: 40px;
-    transition: .5s;
-    opacity: 0;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active::after {
-    opacity: 1;
-}
-
-.testimonial-carousel .owl-dots .owl-dot img {
-    opacity: .4;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active img {
-    opacity: 1;
-}
 
 
 /*** Footer ***/
