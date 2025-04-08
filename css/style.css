@@ -216,7 +216,7 @@ h6,
 }
 
 .header-carousel .owl-dots .owl-dot.active img {
-    opacity: 1;
+    opacity: 10;
 }
 
 .page-header {
@@ -321,7 +321,6 @@ h6,
 .service-item .service-text {
     background: rgba(255, 255, 255, 0.85);
     transition: 0.5s;
-    border-radius: 10px;
 }
 
 .service-item:hover .service-text {
@@ -418,4 +417,9 @@ h6,
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }

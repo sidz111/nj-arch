@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Arkitektur - Architecture HTML Template</title>
+    <title>Nandajay Architects</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -43,20 +43,32 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <style>
+      body {
+        overflow-x: hidden;
+      }
       .portfolio-img {
         overflow: hidden;
         position: relative;
+        border-radius: 20px; /* Rounded border */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
       .portfolio-img img {
         width: 100%;
         height: 300px;
         object-fit: cover;
-        transition: transform 0.3s ease;
+        border-radius: 20px; /* Rounded image corners */
+        transition: transform 0.4s ease;
+      }
+
+      .portfolio-img:hover {
+        transform: scale(1.02); /* Slight lift */
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
       }
 
       .portfolio-img:hover img {
-        transform: scale(1.1);
+        transform: scale(1.1); /* Zoom image */
       }
 
       @media (max-width: 768px) {
