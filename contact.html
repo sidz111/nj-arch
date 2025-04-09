@@ -58,7 +58,10 @@
     >
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
-          <h1 class="text-primary m-0 d-flex align-items-center">
+          <h1
+            class="m-0 d-flex align-items-center"
+            style="color: var(--primary)"
+          >
             <img
               src="img/icons/icon.png"
               alt="Architects Logo"
@@ -120,65 +123,80 @@
           style="max-width: 600px"
         >
           <h4 class="section-title">Contact Us</h4>
-          <h1 class="display-5 mb-4">
-            If You Have Any Query, Please Feel Free Contact Us
+          <h1 class="display-6 display-md-5 mb-4">
+            If You Have Any Query, Please Feel Free To Contact Us
           </h1>
         </div>
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="d-flex flex-column justify-content-between h-100">
+        <div class="row g-4 g-lg-5">
+          <!-- Contact Info -->
+          <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex flex-column gap-4 h-100">
+              <!-- Address -->
               <div
-                class="bg-light d-flex align-items-center w-100 p-4 mb-4 rounded shadow-sm"
+                class="bg-light d-flex align-items-start p-4 rounded shadow-sm"
               >
                 <div
-                  class="d-flex align-items-center justify-content-center bg-dark rounded-circle shadow"
-                  style="width: 55px; height: 55px"
+                  class="text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="
+                    width: 55px;
+                    height: 55px;
+                    background-color: var(--primary);
+                  "
                 >
-                  <i class="fa fa-map-marker-alt text-primary fs-4"></i>
+                  <i class="fa fa-map-marker-alt fs-4"></i>
                 </div>
-                <div class="ms-4">
+                <div class="ms-3">
                   <p class="mb-1 text-muted">Address</p>
-                  <h5 class="mb-0 fw-bold">
-                    Behind Nhavare Grampanchayat Mallikrjun Mandir Road,
-                    Nhavare, Tal - Shirur, Dist - Pune 412 211
-                  </h5>
+                  <h6 class="mb-0">Behind Nhavare Grampanchayat</h6>
+                  <h6 class="mb-0">Mallikarjun Mandir Road, Nhavare,</h6>
+                  <h6 class="mb-0">Tal - Shirur, Dist - Pune 412 211</h6>
                 </div>
               </div>
 
+              <!-- Phone -->
               <div
-                class="bg-light d-flex align-items-center w-100 p-4 mb-4 rounded shadow-sm"
+                class="bg-light d-flex align-items-start p-4 rounded shadow-sm"
               >
                 <div
-                  class="d-flex align-items-center justify-content-center bg-dark rounded-circle shadow"
-                  style="width: 55px; height: 55px"
+                  class="text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="
+                    width: 55px;
+                    height: 55px;
+                    background-color: var(--primary);
+                  "
                 >
-                  <i class="fa fa-phone-alt text-primary fs-4"></i>
+                  <i class="fa fa-phone-alt fs-4"></i>
                 </div>
-                <div class="ms-4">
+                <div class="ms-3">
                   <p class="mb-1 text-muted">Call Us Now</p>
-                  <h5 class="mb-0 fw-bold">+91 9623752492</h5>
+                  <h6 class="mb-0 fw-bold">+91 9623752492</h6>
                 </div>
               </div>
 
+              <!-- Email -->
               <div
-                class="bg-light d-flex align-items-center w-100 p-4 rounded shadow-sm"
+                class="bg-light d-flex align-items-start p-4 rounded shadow-sm"
               >
                 <div
-                  class="d-flex align-items-center justify-content-center bg-dark rounded-circle shadow"
-                  style="width: 55px; height: 55px"
+                  class="text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                  style="
+                    width: 55px;
+                    height: 55px;
+                    background-color: var(--primary);
+                  "
                 >
-                  <i class="fa fa-envelope-open text-primary fs-4"></i>
+                  <i class="fa fa-envelope-open fs-4"></i>
                 </div>
-                <div class="ms-4">
+                <div class="ms-3">
                   <p class="mb-1 text-muted">Mail Us Now</p>
-                  <h5 class="mb-0 fw-bold">
-                    Chandrakant.bhosale1903@gmail.com
-                  </h5>
+                  <h6 class="mb-0">Chandrakant.bhosale1903@gmail.com</h6>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+          <!-- Contact Form -->
+          <div class="col-12 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <p class="mb-4">
               Get in touch for premium architecture services! Let's build your
               dream project together. Contact us now! 🚀
@@ -189,8 +207,8 @@
               novalidate
             >
               <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating position-relative">
+                <div class="col-sm-6">
+                  <div class="form-floating mt-3 position-relative">
                     <input
                       type="text"
                       class="form-control rounded-pill"
@@ -202,13 +220,12 @@
                     <small
                       class="text-danger position-absolute"
                       id="nameError"
-                      style="top: 100%; left: 10%"
                     ></small>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="form-floating position-relative">
+                <div class="col-sm-6">
+                  <div class="form-floating mt-3 position-relative">
                     <input
                       type="email"
                       class="form-control rounded-pill"
@@ -220,13 +237,12 @@
                     <small
                       class="text-danger position-absolute"
                       id="emailError"
-                      style="top: 100%; left: 6%"
                     ></small>
                   </div>
                 </div>
 
-                <div class="col-12 mt-4">
-                  <div class="form-floating position-relative">
+                <div class="col-12">
+                  <div class="form-floating mt-3 position-relative">
                     <input
                       type="text"
                       class="form-control rounded-pill"
@@ -238,15 +254,14 @@
                     <small
                       class="text-danger position-absolute"
                       id="subjectError"
-                      style="top: 100%; left: 6%"
                     ></small>
                   </div>
                 </div>
 
-                <div class="col-12 mt-4">
-                  <div class="form-floating position-relative">
+                <div class="col-12">
+                  <div class="form-floating mt-3 position-relative">
                     <textarea
-                      class="form-control rounded-right"
+                      class="form-control"
                       placeholder="Leave a message here"
                       id="message"
                       name="message"
@@ -256,14 +271,14 @@
                     <small
                       class="text-danger position-absolute"
                       id="messageError"
-                      style="top: 100%; left: 5%"
                     ></small>
                   </div>
                 </div>
 
-                <div class="col-12 mt-4">
+                <div class="col-12">
                   <button
-                    class="btn btn-primary w-100 py-3 rounded-pill fw-bold"
+                    class="btn w-100 py-3 mt-3 rounded-pill fw-bold"
+                    style="color: var(--dark); background-color: var(--primary)"
                     type="submit"
                   >
                     Send Message
@@ -287,19 +302,16 @@
                     .getElementById("message")
                     .value.trim();
 
-                  // Error message elements
                   const nameError = document.getElementById("nameError");
                   const emailError = document.getElementById("emailError");
                   const subjectError = document.getElementById("subjectError");
                   const messageError = document.getElementById("messageError");
 
-                  // Clear previous errors
                   nameError.textContent = "";
                   emailError.textContent = "";
                   subjectError.textContent = "";
                   messageError.textContent = "";
 
-                  // Validate fields
                   if (!name) {
                     nameError.textContent = "Please enter your name";
                     isValid = false;
@@ -325,7 +337,7 @@
                   }
 
                   if (!isValid) {
-                    e.preventDefault(); // prevent form submission
+                    e.preventDefault();
                   }
                 });
 
@@ -338,6 +350,7 @@
         </div>
       </div>
     </div>
+
     <!-- Contact End -->
 
     <!-- Google Map Start -->
@@ -364,12 +377,16 @@
           <div class="col-lg-3 col-md-6">
             <h3 class="text-light mb-4">Address</h3>
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt text-primary me-3"></i>Behind
-              Nhavare Grampanchayat Mallikrjun Mandir Road, Nhavare, Tal -
-              Shirur, Dist - Pune 412 211
+              <i
+                class="fa fa-map-marker-alt me-3"
+                style="color: var(--primary)"
+              ></i
+              >Behind Nhavare Grampanchayat Mallikrjun Mandir Road, Nhavare, Tal
+              - Shirur, Dist - Pune 412 211
             </p>
             <p class="mb-2">
-              <i class="fa fa-phone-alt text-primary me-3"></i>+91 9623752492
+              <i class="fa fa-phone-alt me-3" style="color: var(--primary)"></i
+              >+91 9623752492
             </p>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -413,8 +430,11 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
+    <a
+      href="#"
+      class="btn btn-lg btn-lg-square back-to-top"
+      style="background-color: var(--primary)"
+      ><i class="bi bi-arrow-up" style="color: var(--dark)"></i
     ></a>
 
     <!-- JavaScript Libraries -->
