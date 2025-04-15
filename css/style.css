@@ -5,28 +5,6 @@
     --dark: #252525;
 }
 
-/* Hide the default cursor */
-body {
-    cursor: none;
-}
-
-/* Custom cursor circle */
-.custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    background: rgba(0, 255, 255, 0.7);
-    border: 2px solid #00ffff;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: transform 0.15s ease-out;
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
-}
-
 
 h1,
 h2,
